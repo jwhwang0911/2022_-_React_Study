@@ -1,8 +1,10 @@
 import React from 'react';
 
-function Hello() {
+function Hello(props) { // props는 객체로 넘어옴
     return (
-        <div>안녕하세요</div>
+        <div style={{color : props.color}}>
+            안녕하세요 {props.name}
+        </div>
     )
 }
 
